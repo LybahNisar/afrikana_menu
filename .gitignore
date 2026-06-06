@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
 
+# Local npm files ignored on GitHub for clean Vercel static serving
+package.json
+package-lock.json
+
 # Build output
 dist/
 build/
