@@ -4,7 +4,8 @@
   "description": "Afrikana Digital Menu",
   "scripts": {
     "dev": "serve .",
-    "start": "serve ."
+    "start": "serve .",
+    "build": "echo 'No build step required'"
   },
   "dependencies": {
     "serve": "^14.2.4"
