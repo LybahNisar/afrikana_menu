@@ -55,39 +55,6 @@ if (allergyCloseBtn) {
   });
 }
 
-// Allergy Popup
-const popup = document.getElementById('allergyPopup');
-const closeBtn = document.getElementById('popupClose');
-const dismissBtn = document.getElementById('popupDismiss');
-
-function closePopup() {
-  popup.classList.add('hidden');
-  setTimeout(() => popup.style.display = 'none', 300);
-}
-
-if (closeBtn) {
-  closeBtn.addEventListener('click', closePopup);
-}
-if (dismissBtn) {
-  dismissBtn.addEventListener('click', closePopup);
-}
-
-// Close if customer taps outside the box
-if (popup) {
-  popup.addEventListener('click', (e) => {
-    if (e.target === popup) closePopup();
-  });
-}
-
-
-// Toggle allergy tags interactivity
-const popupTags = document.querySelectorAll('.popup-tag');
-popupTags.forEach(tag => {
-  tag.addEventListener('click', () => {
-    tag.classList.toggle('active');
-  });
-});
-
 // ── ALLERGEN FINDER & MATRIX LOGIC ──
 const allergenData = [
   {
