@@ -1,0 +1,12 @@
+{
+  "name": "afrikana-menu",
+  "version": "1.0.0",
+  "description": "Afrikana Digital Menu",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
