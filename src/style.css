@@ -1776,3 +1776,79 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .legend-label {
   color: var(--text-muted);
 }
+
+/* ══════════════════════════════════════════════════
+   MOBILE OVERRIDES — placed last to guarantee win
+   over all earlier rules in the cascade
+   ══════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Allergen section padding */
+  .allergen-section {
+    padding: 40px 14px !important;
+  }
+
+  /* Tab buttons: wrap instead of overflow */
+  .allergen-tabs {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    padding: 0 10px !important;
+    margin-bottom: 24px !important;
+  }
+  .allergen-tab-btn {
+    font-size: 11px !important;
+    padding: 8px 14px !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap !important;
+  }
+
+  /* Finder grid: single column stack, sidebar on top */
+  .finder-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  /* Sidebar: not sticky, full width */
+  .finder-sidebar {
+    position: static !important;
+    width: 100% !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Allergen toggle buttons: smaller on mobile */
+  .finder-toggles {
+    max-height: 240px !important;
+  }
+
+  /* Results: full width */
+  .finder-results {
+    width: 100% !important;
+  }
+
+  /* Result cards: stack content vertically */
+  .result-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+    padding: 14px 16px !important;
+  }
+
+  /* Legend: wrap on small screens */
+  .results-legend {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  /* Matrix table: scrollable horizontally */
+  .matrix-wrapper {
+    overflow-x: auto !important;
+  }
+  .matrix-legend {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+}
