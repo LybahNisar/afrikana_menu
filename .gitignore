@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Public folder (causes Vercel to serve from wrong directory)
+public/
+
 # Local npm files ignored on GitHub for clean Vercel static serving
 package.json
 package-lock.json
